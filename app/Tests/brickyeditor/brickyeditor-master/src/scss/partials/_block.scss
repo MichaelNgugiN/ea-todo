@@ -1,0 +1,28 @@
+.brickyeditor-block-wrapper {
+
+    &.active {
+        > .brickyeditor-block-tools {                
+            display: block;
+        }
+
+        outline: 1px dashed $color-border;
+    }
+
+    .brickyeditor-block-tools {
+        width: (5*16)px;
+        position: absolute;
+        display: none;
+        background: white;
+        opacity: 0.8;
+        z-index: $fixed-z-index;
+
+        a {
+            color: $color-btn-dark !important;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover {
+                color: lighten($color-btn-dark, 20%) !important;
+            }
+        }
+    }
+}
