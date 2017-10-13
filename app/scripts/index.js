@@ -16,6 +16,7 @@ const fs = require('fs')
 const os = require('os')
 const path = require('path')
 
+
 const screenshot = document.getElementById('screen-shot')
 const screenshotMsg = document.querySelector('.screenshot-path')
 
@@ -80,7 +81,7 @@ clipboardWatcher({
   }
 
       for(var doc in app.document_clips){
-        if(app.document_clips[doc].documentation_id === 1){
+        if(app.document_clips[doc].documentation_id === app.activedockey){
           var nextId = app.document_clips[doc].clips.length + 1
         //  var text = clipboard.readText('selection')
           var found = false
@@ -133,7 +134,7 @@ clipboardWatcher({
       //image.src = "file:///" + txtImg.replace(/"/g, '');
       clipboard.writeImage(im)
         for(var doc in app.document_clips){
-          if(app.document_clips[doc].documentation_id === 1){
+          if(app.document_clips[doc].documentation_id === app.activedockey){
             var nextId = app.document_clips[doc].clips.length + 1
             var text = clipboard.readText('selection')
             var found = false
@@ -176,7 +177,7 @@ clipboardWatcher({
       }
 
       for(var doc in app.document_clips){
-        if(app.document_clips[doc].documentation_id === 1){
+        if(app.document_clips[doc].documentation_id === app.activedockey){
           var nextId = app.document_clips[doc].clips.length + 1
           var text = clipboard.readText('selection')
           var found = false

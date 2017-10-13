@@ -1,0 +1,53 @@
+
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0{
+		background-size: cover;
+		/*background-attachment: fixed;*/
+	}
+
+	/* Defining each sectino background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url("../images/crossing.jpg") !important;
+		/*background-color: red !important;*/
+		background-attachment: fixed;
+
+	}
+
+	#section2{
+		/*background-image: url("dist\\images\\Web 1920 – 2.png");*/
+		background: #f2f2f2 !important;
+		padding: 6% 0 0 0;
+	}
+	#section3{
+		/*background-image: url("dist\\images\\Web 1920 – 3.png");*/
+		background: blue;
+		padding: 6% 0 0 0;
+	}
+	#section3 h1{
+		color: #000;
+		/*background: orangered;*/
+	}
+
+
+	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		/*background-image: url("dist\\images\\Web 1920 – 3.png");*/
+		background: #fff;
+		padding: 6% 0 0 0;
+	}
+	#slide2{
+		/*background-image: url("dist\\images\\Web 1920 – 4.png");*/
+		background: #fff;
+		padding: 6% 0 0 0;
+	}

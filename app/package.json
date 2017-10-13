@@ -10,7 +10,9 @@
     "angular-animate": "^1.5.5",
     "angular-aria": "^1.5.5",
     "angular-material": "^1.0.8",
+    "cheerio": "^1.0.0-rc.2",
     "electron-squirrel-startup": "^1.0.0",
+    "line-by-line": "^0.1.5",
     "winston": "^2.2.0"
   }
 }

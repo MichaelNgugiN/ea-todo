@@ -8,6 +8,8 @@ const {autoUpdater} = electron;
 const {ipcMain} = electron;
 const os = require('os');
 const logger = require('winston');
+const path = require('path')
+
 
 logger.level = 'debug';
 global.logger = logger;
@@ -34,6 +36,7 @@ app.on('ready', function() {
         width: 780,
         height: 600,
         toolbar: false,
+				icon: path.join(__dirname,"assets/img/icon.ico")
     });
 
     // Target HTML file which will be opened in window
