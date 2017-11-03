@@ -33,14 +33,15 @@ app.on('ready', function() {
     // http://electron.atom.io/docs/latest/api/browser-window/#new-browserwindow-options
     mainWindow = new BrowserWindow({
         name: "ea-todo",
-        width: 780,
-        height: 600,
-        toolbar: false,
+        width: 1000,
+        height: 725,
+        //toolbar: false,
+       //frame: false,
 				icon: path.join(__dirname,"assets/img/icon.ico")
     });
 
     // Target HTML file which will be opened in window
-    mainWindow.loadURL('file://' + __dirname + "/index.html");
+    mainWindow.loadURL('file://' + __dirname + "/index2.html");
 
     // Uncomment to use Chrome developer tools
     // mainWindow.webContents.openDevTools({detach:true});

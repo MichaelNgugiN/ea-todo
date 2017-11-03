@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zaidi Documentations</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+  <link href="ui/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="ui/assets/css/menu.css" rel="stylesheet" type="text/css" />
+  <link href="ui/assets/css/core.css" rel="stylesheet" type="text/css" />
+  <link href="ui/assets/css/components.css" rel="stylesheet" type="text/css" />
+  <link href="ui/assets/css/icons.css" rel="stylesheet" type="text/css" />
+  <link href="ui/assets/css/pages.css" rel="stylesheet" type="text/css" />
+  <link href="ui/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+   <link rel="stylesheet" href="styles/richtext.min.css">
+  <script>
+    window.jQuery || document.write('<script src="dist/jquery.js"><\/script>')
+  </script>
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style type="text/css">
+    html,
+    body {
+
+      font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    }
+
+    .router-link-active {
+      color: red;
+    }
+
+    .Zfade-enter-active,
+    .Zfade-leave-active {
+      transition: opacity .5s
+    }
+
+    .Zfade-enter,
+    .Zfade-leave-to
+    /* .fade-leave-active below version 2.1.8 */
+
+    {
+      opacity: 0
+    }
+
+    .box {
+      width: 400px;
+      height: 100px;
+      background: red;
+    }
+
+    .list-enter-active,
+    .list-leave-active {
+      transform: translateY(0px);
+      transition: all .5s;
+    }
+
+    .list-enter,
+    .list-leave-to
+    /* .list-leave-active below version 2.1.8 */
+
+    {
+      opacity: 1;
+      transform: translateY(30px);
+      transition: all .5s ease .5s;
+    }
+
+    .active-card {
+      width: 250px;
+    }
+
+    #widgetS {
+      width: 90%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 80vh;
+      overflow: visible;
+    }
+
+    .search-widget {
+      margin-left: 0px;
+    }
+
+    ul {
+      padding-left: 0px !important;
+    }
+
+    #w-group {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    #model {
+         /* float: right; */
+    width: 69%;
+    position: absolute;
+    right: 11%;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    .scroll::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    .scroll::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px #fff;
+      border-radius: 10px
+    }
+
+    .scroll::-webkit-scrollbar-thumb {
+      -webkit-box-shadow: inset 0 0 6px #FF5722;
+      border-radius: 10px
+    }
+
+    .richText .richText-editor {
+      padding: 20px;
+      background-color: #FFFFFF;
+      border-left: #FFFFFF solid 2px;
+      font-family: Calibri, Verdana, Helvetica, sans-serif;
+      height: 100px;
+      outline: none;
+      overflow-y: scroll;
+      overflow-x: auto;
+    }
+
+.scroll3::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+.scroll3::-webkit-scrollbar-thumb {
+  background: #ddd; 
+}
+
+.scroll3::-webkit-scrollbar-track {
+  background: #57c5a5; 
+}
+
+  </style>
+</head>
+
+<body class="widescreen fixed-left scroll3">
+  <div id="wrapper">
+
+      
+ <div id="app">
+    <!-- Top Bar Start -->
+      <div class="topbar" style="-webkit-app-region: drag;">
+
+        <!-- LOGO -->
+        <div class="topbar-left">
+          <div class="text-center">
+            <a href="index.html" class="logo">
+                            <i class="zmdi zmdi-toys icon-c-logo"></i><span><small>Zaidi</small><span>Documetations</span></span>
+                         
+                            <!--<span><img src="assets/images/logo.png" alt="logo" style="height: 20px;"></span>-->
+                        </a>
+          </div>
+        </div>
+
+        <!-- Button mobile view to collapse sidebar menu -->
+        <div class="navbar navbar-default" role="navigation">
+          <div class="container">
+            <div class="">
+              <div class="pull-left" style="padding-top: 10px;">
+               
+                <blockquote style="margin-bottom: 0px;">
+                <small style="color: white">{{answer}}</small>
+
+                </blockquote>
+              </div>
+
+
+
+
+              <ul class="nav navbar-nav navbar-right pull-right">
+                <li>
+                  <!-- Notification -->
+                  <div class="notification-box">
+                    <ul class="list-inline m-b-0">
+                        <li>
+                        <a href="javascript:void(0);" class="waves-effect"  style="-webkit-app-region: no-drag;">
+                                                    <i class="zmdi zmdi-window-minimize"></i>
+                                                </a>
+                        
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="waves-effect"  style="-webkit-app-region: no-drag;">
+                                                    <i class="zmdi zmdi-window-restore"></i>
+                                                </a>
+                        
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="waves-effect"  style="-webkit-app-region: no-drag;">
+                                                    <i class="zmdi zmdi-close"></i>
+                                                </a>
+                        
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- End Notification bar -->
+                </li>
+
+
+              </ul>
+
+            </div>
+            <!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+      <!-- Top Bar End -->
+     <!-- ========== Left Sidebar Start ========== -->
+
+      <div class="left side-menu">
+
+        <div class="sidebar-inner slimscrollleft">
+          <div class="navbar-left app-search pull-left hidden-xs" style="z-index: 10000;width: 95%;">
+            <input class="form-control" v-model="query" v-on:keyup.enter="addNewDoc" placeholder="Search or Create New Documentation">
+            <a href="#"><i class="fa fa-search"></i></a>
+          </div>
+          <!--- Divider -->
+          <div id="sidebar-menu">
+
+          <!--<input class="uk-input" v-model="query" v-on:keyup.enter="addNewDoc" placeholder="Search or Create New Documentation">-->
+          <!--<a class="button" v-on:click="takeScreen">:::</a>-->
+          <doc-widget :docs="filteredList" v-on:increment="incrementTotal" @clicked="refreshClips" :param="docsview"></doc-widget>
+
+            <div class="clearfix"></div>
+          </div>
+          <div class="clearfix"></div>
+
+        </div>
+      </div>
+      <!-- Left Sidebar End -->
+  <!-- ============================================================== -->
+      <!-- Start right Content here -->
+      <!-- ============================================================== -->
+      <div class="content-page">
+        <!-- Start content -->
+        <div class="content scroll3" style="height: 82vh;overflow-y: scroll;">
+          <div class="container">
+
+            <!-- Page-Title -->
+            <div class="row">
+              <div class="col-sm-12">
+
+
+                <h4 class="page-title">
+                  <blockquote>
+                    
+                    {{ activedocname }}
+                  </blockquote>
+                </h4>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="card-box">
+                  <div class="dropdown pull-right">
+                    <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="zmdi zmdi-more-vert"></i>
+                                        </a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Preview in browser</a></li>
+                      <li><a href="#">Edit</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Import MTHML (*.mht)</a></li>
+                      <li><a href="#">Export Documentation</a></li>
+                      <li><a href="#">Delete Documetation</a></li>
+                    </ul>
+
+                  </div>
+                  <h4 class="header-title m-t-0"><b>Introduction </b></h4>
+                  <p class="text-muted m-b-20 font-13">
+                    Your awesome text goes here. Your awesome text goes here.
+                  </p>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+              <!-- end col -->
+
+            </div>
+            <!-- end row -->
+
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card-box">
+                  <div class="dropdown pull-right">
+                    <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="zmdi zmdi-more-vert"></i>
+                                        </a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+
+                  </div>
+
+                  <h4 class="header-title m-t-0 m-b-30">Content</h4>
+
+                    <div class="col-lg-12">
+                     <clips-model :my-clips="filteredClipsList" @clicked="updateContent" :status="clipsSeen" :self-seen="helperVisible">
+        <div class="uk-padding-small" v-if="clipsSeen">
+          <button class="btn btn-custom" @click="MutateClips()" type="button"><i class="zmdi zmdi-collection-add"></i></button>
+          <button class="btn btn-outline-primary" type="button" @click="ExportThisDoc()"><i class="zmdi zmdi-eye"></i></button>
+          <button class="btn btn-linkedin" type="button" @click="importDocumentation()"><i class="zmdi zmdi-upload"></i></button>
+          <a class="uk-padding-small" style="float:right; font-weight:bold" @click="hideHelper">X</a>
+          <input class="uk-input" v-model="modelSearch" placeholder="Search clips">
+        </div>
+        <clip-content :my-clipdata="clipdata" @toggled="showClipsToggle" @delete="DeleteClip()" :status="contentdataSeen" :is-image="shownImage"
+          :my-text="myText" :clip-object="activeClip">
+
+
+        </clip-content>
+
+      </clips-model>
+
+                    </div>
+                   
+
+                </div>
+              </div>
+              <!-- end col -->
+
+
+
+            </div>
+            <!-- end row -->
+
+
+
+          </div>
+          <!-- container -->
+
+        </div>
+        <!-- content -->
+
+        <footer class="footer">
+          2017 © Zaidi Docs. Design by SilentBalance
+        </footer>
+
+      </div>
+      <!-- ============================================================== -->
+      <!-- End Right content here -->
+      <!-- ============================================================== -->
+
+
+
+
+    <div id="modal-sections" uk-modal>
+      <!-- class="uk-flex-top" -->
+      <div class="uk-modal-dialog ">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+
+          <h2 class="uk-modal-title">
+            {{activeClip.clip_name}}
+          </h2>
+        </div>
+        <div class="uk-modal-body">
+          <div class="uk-margin">
+            <input type="text" class="uk-input" v-model="activeClip.clip_name">
+          </div>
+          <div style="max-height: 150px !important; overflow: scroll">
+            <pre class="uk-margin-remove" v-if="shownImage"><code class="html">
+        {{activeClip.clip_text}}
+         </code>
+
+       </pre>
+            <img id="img" :src="activeClip.clip_text" v-if="!shownImage" />
+
+          </div>
+
+          <p>Description</p>
+          <div id="description">
+            <textarea name="" id="" cols="30" rows="5" class="content" style="" :value="activeClip.clip_description"></textarea>
+          </div>
+
+          <div class="uk-margin">
+            <select class="uk-select" v-bind:value="selectVal" v-on:change="selectVal = $event.target.value">
+          <option v-for="doc in documents" :value="doc.documentation_id">{{ doc.name}}</option>
+        </select>
+          </div>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+
+          <button class="uk-button uk-button-primary uk-modal-close" type="button">Exit</button>
+          <button class="uk-button uk-button-default" type="button" @click="UpdateClipData()">Save</button>
+        </div>
+      </div>
+
+    </div>
+
+    
+
+
+
+
+
+  </div>
+
+
+    </div>
+ 
+  <!--  console.log(key)
+  app.key = key -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+ 
+  <!-- <script src="scripts/highlight.pack.js"></script> -->
+   <script src="ui/assets/js/jquery.min.js"></script>
+     <script src="dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="ui/assets/js/bootstrap.min.js"></script>
+  <script src="ui/assets/js/detect.js"></script>
+  <script src="ui/assets/js/fastclick.js"></script>
+  <script src="ui/assets/js/jquery.slimscroll.js"></script>
+  <script src="ui/assets/js/jquery.blockUI.js"></script>
+  <script src="ui/assets/js/waves.js"></script>
+  <script src="ui/assets/js/wow.min.js"></script>
+  <script src="ui/assets/js/jquery.nicescroll.js"></script>
+  <script src="ui/assets/js/jquery.scrollTo.min.js"></script>
+   <script src="dist/jquery.richtext.js"></script>
+  <script>
+   $(document).ready(function () {
+      $('textarea.content').richText();
+      console.log($('.richText-editor').html())
+    });
+
+    function testIfWorks() {
+
+      $(document).ready(function () {
+        console.log($('.richText-editor').html())
+      });
+    }
+  </script>
+
+  <!--Morris Chart-->
+  <script src="ui/assets/plugins/morris/morris.min.js"></script>
+  <script src="ui/assets/plugins/raphael/raphael-min.js"></script>
+
+  <!-- Counter Up  -->
+  <script src="ui/assets/plugins/waypoints/lib/jquery.waypoints.js"></script>
+  <script src="ui/assets/plugins/counterup/jquery.counterup.min.js"></script>
+
+  <!-- Dashboard init -->
+  <script src="ui/assets/pages/jquery.dashboard.js"></script>
+
+
+  <!-- App js -->
+  <script src="ui/assets/js/jquery.core.js"></script>
+  <script src="ui/assets/js/jquery.app.js"></script>
+
+  <script type="text/javascript">
+    var dialog = require('electron').remote.dialog;
+    var test = {
+      removed: false
+    }
+    // Register a global custom directive called v-focus
+
+    var activedoc = {
+      props: ['curActive'],
+      template: '<div class="uk-card"> \
+      <transition-group name="list" tag="ul"><li class="uk-card uk-card-default uk-padding-small active-card" v-for="(doc, index) in curActive" :key="doc.documentation_id" v-on:remove="" v-on:click="showIndex(doc)">\
+      {{ doc.name }}\
+      <span @click="removeMe(index)" style="float:right">X</span>\
+      </li>\
+      </transition-group>\
+       <slot></slot>\
+      </div>',
+      methods: {
+        removeMe: function (value) {
+          this.curActive.splice(value, 1)
+          var data = {
+            key: value,
+            removed: true
+          }
+          this.$emit('removed', data)
+        },
+        showIndex: function (value) {
+          console.log(value)
+          var data = {
+            key: value.documentation_id,
+            name: value.name,
+            removed: false
+          }
+          this.$emit('clicked', data)
+        }
+      }
+
+    }
+    var docs = {
+      props: ['docs', 'param'],
+      template: '<transition-group name="list" tag="ul" class="remove-list" v-if="param">\
+       <li class="has_sub" v-for="(doc, index) in docs" v-on:click="showIndex(doc)" v-bind:key="doc.name"> \
+         <a class="waves-effect"><i class="zmdi zmdi-view-dashboard"></i> <span>  {{ doc.name }} </span> </a>\
+        </li></transition-group>',
+      methods: {
+        // addActive: function (key) {
+        //   console.log(key)
+        //   this.$emit('increment', key)
+        // },
+        showIndex: function (value) {
+          console.log(value)
+          var data = {
+            key: value.documentation_id,
+            name: value.name,
+            removed: false
+          }
+          this.$emit('clicked', data)
+        }
+      }
+    }
+    var clipContent = {
+      props: ['myClipdata', 'status', 'isImage', 'myText', 'clipObject'],
+      template: '<div id="data-block"  v-if="status">\
+    <div class="uk-card uk-padding-small uk-margin-remove uk-align-center">\
+    <p> <b>{{clipObject.clip_name}}</b>\
+    <div class="uk-align-right" style="position: absolute;top: 5px;right: 5px;">\
+    <a href="#modal-sections" class="btn btn-outline-primary" uk-toggle><i class="zmdi zmdi-edit"></i></a>\
+          <button class="btn btn-outline-primary" type="button" @click="$emit(\'delete\')"><i class="zmdi zmdi-delete"></i></button>\
+          <button class="btn btn-outline-info uk-align-right" type="button" v-on:click="ToggleSeen"><i class="zmdi zmdi-close"></i></button>\
+    </div>\
+    </p>\
+    </div>\
+    <p class="uk-card uk-padding-small uk-margin-remove scroll" style="max-height: 350px; overflow: scroll">\
+     <pre class="uk-margin-remove" v-if="isImage"><code class="html">\
+     {{myClipdata}}\
+     </code></pre>\
+     <img id="img" :src="myClipdata" v-if="!isImage"/>\
+     <div class="uk-card uk-padding uk-margin-remove uk-align-center" style="max-height: 200px; overflow-y: scroll">\
+     <p v-html="clipObject.clip_description"></p>\
+     </div>\
+      \
+      </p>\
+      <slot></slot>\
+      </div>',
+      methods: {
+        ToggleSeen: function () {
+          console.log("Nada Nada")
+          this.$emit("toggled")
+        }
+      }
+    }
+    var clipsModel = {
+      props: ['myClips', 'status', 'selfSeen'],
+      template: '<div class="uk-padding-remove " v-if="selfSeen"><slot></slot>\
+                       <transition-group name="list" tag="ul" class="uk-padding-remove uk-margin-remove" v-if="status"><li class="card-box widget-user" v-for="(clip, index) in myClips" :key="clip.clip_name">\
+                                <div class="wid-u-info" @click="UpdateData(clip)">\
+                                    <h4 class="m-t-0 m-b-5"> {{ clip.clip_name }} </h4>\
+                                    <p class="text-muted m-b-5 font-13">www.zaididocumentations.com</p>\
+                                    <small class="text-custom"><b>{{ clip.clip_date }} </b></small>\
+                                </div>\
+                         </li></transition-group></div>',
+      methods: {
+        UpdateData: function (value) {
+          console.log(value)
+          this.$emit('clicked', value)
+        }
+      }
+
+    }
+    const app = new Vue({
+      components: {
+        'activedoc-widget': activedoc,
+        'doc-widget': docs,
+        'clips-model': clipsModel,
+        'clip-content': clipContent
+      },
+      data: {
+        selectVal: 1,
+        parentmsg: "Parent",
+        docsview: true,
+        activedockey: 1,
+        activedocname: "General",
+        shownImage: true,
+        myText: "hello",
+        clipName: "Name",
+        activeClip: {
+          "clip_id": 1,
+          "clip_name": "Bootstrap download",
+          "clip_tag": "Bootstrap download lk",
+          "clip_text": "http://getbootstrap.com/.",
+          "clip_description": "The functions you use text as a parameter to are Vanilla JavaScript methods, and so expect a DOM node rather than a jQuery object. \"This\" by itself in this case is a DOM node. But, wrapping it in $() turns it into a jQuery object, which is then unusable by the functions you call later on.",
+          "clip_Slide": 1,
+          "is_text": true,
+          "is_primary": true,
+          "clip_time": "Now",
+          "clip_date": Date()
+        },
+        activedocs: [{
+          "documentation_id": 1,
+          "name": "General",
+          "author": "Michael N. N.",
+          "dateCreated": "Wed Aug 30 16:38:10 EAT 2017",
+          "Short_desc": "New Documentatoin",
+          "imageUrl": "pic.png"
+        }],
+        documents: [{
+          "documentation_id": 1,
+          "name": "General",
+          "author": "Michael N. N.",
+          "dateCreated": "Wed Aug 30 16:38:10 EAT 2017",
+          "Short_desc": "New Documentatoin",
+          "imageUrl": "pic.png"
+        }],
+        NativeClips: [{
+          "clip_name": "Clips will Show Up Here"
+        }],
+        document_clips: [{
+          "documentation_id": 1,
+          "name": "bootstrap",
+          "clips": [{
+            "clip_id": 1,
+            "clip_name": "Bootstrap download",
+            "clip_tag": "Bootstrap download lk",
+            "clip_text": "http://getbootstrap.com/.",
+            "clip_description": "The functions you use text as a parameter to are Vanilla JavaScript methods, and so expect a DOM node rather than a jQuery object. \"This\" by itself in this case is a DOM node. But, wrapping it in $() turns it into a jQuery object, which is then unusable by the functions you call later on.",
+            "clip_Slide": 1,
+            "is_text": true,
+            "is_primary": true,
+            "clip_time": "Now",
+            "clip_date": Date()
+          }]
+        }],
+        clipdata: "yada yada",
+        answer: "",
+        query: "",
+        modelSearch: "",
+        clipsSeen: true,
+        helperVisible: false,
+        contentdataSeen: false
+      },
+
+      watch: {
+        // whenever question changes, this function will run
+        query: function (newQuestion) {
+          this.answer = 'Waiting for you to stop typing...'
+          //console.log(this.query)
+          this.filterDocuments(this.query)
+        }
+      },
+      computed: {
+        filteredList() {
+          return this.documents.filter(post => {
+            return post.name.toLowerCase().includes(this.query.toLowerCase())
+          })
+        },
+        filteredClipsList() {
+          return this.NativeClips.filter(post => {
+            return post.clip_name.toLowerCase().includes(this.modelSearch.toLowerCase())
+          })
+        }
+
+      },
+      methods: {
+        MutateClips: function () {
+          for (var doc in this.document_clips) {
+            if (this.document_clips[doc].documentation_id === this.activedockey) {
+              var nextId = this.document_clips[doc].clips.length + 1
+
+              this.document_clips[doc].clips.push({
+                "clip_id": nextId,
+                "clip_name": "Untitled Clip " + nextId,
+                "clip_tag": "Bootstrap download lk",
+                "clip_text": "|| Note",
+                "clip_description": "description Here",
+                "clip_Slide": 1,
+                "is_text": true,
+                "clip_time": "Now",
+                "clip_date": "Mon Mar 27 09:29:21 EAT 2017"
+              })
+
+            }
+          }
+
+
+
+        },
+        // showDocsView: function () {
+        //   this.docsview = true
+        // },
+        // hideDocsView: function () {
+        //   this.docsview = false
+
+        // },
+        hideHelper: function () {
+          this.helperVisible = false
+        },
+        showClipsToggle: function () {
+          if (this.clipsSeen) {
+            this.clipsSeen = false
+            this.contentdataSeen = true
+            //  $('textarea.content').richText();
+          } else {
+            this.clipsSeen = true
+            this.contentdataSeen = false
+            // $('textarea.content').richText();
+          }
+        },
+        importDocumentation: function () {
+
+          dialog.showOpenDialog({
+            filters: [
+
+              {
+                name: 'mhtml',
+                extensions: ['mht']
+              }
+
+            ]
+          }, function (fileNames) {
+
+            if (fileNames === undefined) return;
+
+            var fileName = fileNames[0];
+
+            console.log(fileName)
+            parseDoc(fileName)
+
+          });
+          var currentInstance = this
+
+          function parseDoc(fname) {
+
+
+            console.log("Yada Yada Let the fun begin!!!");
+            var fs = require('fs');
+            var cheerio = require('cheerio'),
+              $ = cheerio.load(fs.readFileSync(fname));
+            var clip = []
+            var LineByLineReader = require('line-by-line');
+            var lr = new LineByLineReader(fname);
+            lr.on('error', function (err) {
+              // 'err' contains error object
+            });
+            var flag = false,
+              count = 0,
+              obj = [],
+              content = "",
+              tag = "",
+              title = ""
+
+            lr.on('line', function (line) {
+
+              //    line = line.replace(tag/g,"")
+              // pause emitting of lines...
+              //lr.pause();
+              //console.log("Im a line......." + line);
+              // ...do your asynchronous line processing..
+              // setTimeout(function () {
+              if (line.startsWith("--=_NextPart_")) {
+                //console.log("Yup! IT does!!!");
+                tag = line
+              }
+              if (line == 'Content-Type: image/jpeg') {
+                obj.push({
+                  name: title,
+                  url: content
+                })
+                content = ""
+                console.log("Yada Yada");
+                count = 0
+                flag = true
+              }
+              if (flag) {
+                if (count == 2) {
+                  title = line.substring(18)
+                  console.log(line.substring(18));
+
+                }
+                count = count + 1
+              }
+              if (count > 3) {
+                flag = false
+                line = line.replace(tag, '')
+                content = content + line
+              }
+
+              // 	// ...and continue emitting lines.
+              // //	lr.resume();
+              // }, 100);
+            });
+
+            lr.on('end', function () {
+              obj.push({
+                name: title,
+                url: content
+              })
+              //console.log(obj);
+              var documentHTML = fs.createWriteStream('test3.html', {
+                flags: 'w'
+              })
+              $('#Steps div').each(function (i, elem) {
+                //    console.log(obj.length);
+                for (var image in obj) {
+
+                  if ($(this).find('a').find('img').attr('src') == obj[image].name) {
+                    //console.log("Yada Yada: " + obj[image].name);
+                    //  console.log($(this).find('a').find('span').text());
+                    //  console.log($(this).find('p').next().html());
+                    documentHTML.write(
+                      `<div title="User left click on &quot;Select Command Prompt (window)&quot; in &quot;Select Command Prompt&quot;" tabindex="0">
+                <p><span class="accessible-text">` +
+                      $(this).find('a').find('span').text() + `</span></p>
+                    <p>` + $(
+                        this).attr('title') +
+                      `</p>
+                    <a><img src="data:image/png;base64,` + obj[image].url +
+                      `"></a>
+                    <hr aria-hidden="true"/>
+                </div>`)
+                    clip.push({
+                      clip_name: $(this).find('a').find('span').text(),
+                      clip_text: obj[image].url,
+                      clip_description: $(this).attr('title')
+                    })
+                  }
+
+                }
+                //    console.log($(this).find('a').find('img').attr('src'));
+              })
+              documentHTML.end()
+
+              //           var newid = currentInstance.documents.length + 1;
+
+              //         currentInstance.documents.push({
+              //           "documentation_id": newid,
+              //         	"name": "New Documentatoin mht " + newid,
+              //         	"author": "Michael N. N.",
+              //         	"dateCreated": "Wed Aug 30 16:38:10 EAT 2017",
+              //           "Short_desc": "New Documentatoin mht",
+              //         	"imageUrl": "pic.png"
+              //           })
+              //           console.log(newid+"Yupo doc clip");
+
+              //  currentInstance.document_clips.push({
+              //             "documentation_id": newid,
+              //             "name": currentInstance.query,
+              //           	"clips": [
+              //               {
+              //                 "clip_id": 1,
+              //           			"clip_name": "Introduction/description",
+              //           			"clip_tag": "Bootstrap download lk",
+              //           			"clip_text": "link to documentation: http://michaelngugin.github.io/.",
+              //                 "clip_description": "Add a description Here!",
+              //           			"clip_Slide": 1,
+              //                 "is_text": true,
+              //                 "is_primary": true,
+              //           			"clip_time": "Now",
+              //           			"clip_date": "Mon Mar 27 09:29:21 EAT 2017"
+              //           		}
+              //               ]
+
+              //             })
+
+              clip.forEach(function (element) {
+                // console.log(new)
+                //  clip.push({clip_name: $(this).find('a').find('span').text(), clip_text: obj[image].name, clip_description: $(this).attr('title')})
+                let im = nativeImage.createFromDataURL(element.clip_text)
+
+                for (var doc in currentInstance.document_clips) {
+                  if (currentInstance.document_clips[doc].documentation_id === currentInstance.activedockey) {
+                    var nextId = currentInstance.document_clips[doc].clips.length + 1
+
+                    currentInstance.document_clips[doc].clips.push({
+                      "clip_id": nextId,
+                      "clip_name": element.clip_name,
+                      "clip_tag": "Bootstrap download lk",
+                      "clip_text": im.toDataURL() + element.clip_text,
+                      "clip_description": element.clip_description,
+                      "clip_Slide": 1,
+                      "is_text": false,
+                      "is_primary": true,
+                      "clip_time": "Now",
+                      "clip_date": Date()
+
+                    })
+
+                  }
+                }
+
+
+              }, this);
+              //   console.log(currentInstance.documents);
+              // console.log(clip);
+              // All lines are read, file is closed now.
+            });
+            //$('li[class=orange]').html()
+
+
+            //console.log($('#Steps').html());
+
+          }
+
+
+        },
+        ExportThisDoc: function () {
+          console.log("Preparing to Export doc");
+          var documentHTML = fs.createWriteStream(__dirname + '/documentations/' + this.activedocname + '.html', {
+            flags: 'w'
+          })
+          var header = fs.readFileSync(__dirname + '/header.txt');
+          var footer = fs.readFileSync(__dirname + '/footer.txt');
+          // console.log(header.toString());
+          documentHTML.write(header.toString());
+          console.log("Active Document: " + this.activedockey);
+          for (var doc in this.document_clips) {
+            if (this.document_clips[doc].documentation_id === this.activedockey) {
+              for (var clip in this.document_clips[doc].clips) {
+
+                if (this.document_clips[doc].clips[clip].clip_id == 1) {
+                  console.log("Here I am Mike: " + this.document_clips[doc].clips[clip].clip_id);
+                  documentHTML.write(
+                    `<section>
+                      <header class="container">
+                        <div class="row">
+                          <nav class="pwc-navbar-container uk-margin">
+                          <div class="pwc-navbar-center">
+                            <a class="pwc-navbar-item pwc-logo uk-align-center">PwC Documentation | ` +
+                    this.document_clips[doc].name +
+                    `</a>
+                            </div>
+                          </nav>
+                        </div>
+                      </header>
+
+                  </section> <section>
+                      <div class="container pwc-padding-small">`
+                  );
+
+                  documentHTML.write(
+                    `    <div class="row">
+                            <div class="col-md-12 pwc-card pwc-card-default">
+                              <div class="pwc-card-header">
+                                  <b>` +
+                    this.document_clips[doc].clips[clip].clip_name +
+                    `</b>
+
+
+                              </div>
+                              <div class="pwc-card-body">
+                              ` +
+                    this.document_clips[doc].clips[clip].clip_description +
+                    `
+
+
+                              </div>
+                            </div>
+                          </div>`
+                  )
+                  continue
+                }
+                if (this.document_clips[doc].clips[clip].is_text == false) {
+
+                  documentHTML.write(
+                    `<div class="row pwc-padding-small">
+                        <div class="col-md-12 pwc-card pwc-card-default">
+                          <div class="pwc-card-header" style="color: orangered;">
+                              <h2 class="pwc-card-title" style="color: #666; font-weight: bold">` +
+                    this.document_clips[doc].clips[clip].clip_name +
+                    `</h2>
+
+
+                          </div>
+                          <div class="pwc-card-media-top pwc-padding-small">
+                          <img src="` +
+                    this.document_clips[doc].clips[clip].clip_text +
+                    `" alt="" class="img-rounded center-block">
+                          </div>
+                          <div class="pwc-card-body">
+                          ` +
+                    this.document_clips[doc].clips[clip].clip_description +
+                    `
+
+                          </div>
+
+
+                        </div>
+                      </div>`
+                  )
+
+
+                } else {
+                  documentHTML.write(
+                    `  <div class="row pwc-padding-small">
+                        <div class="col-md-12 pwc-card pwc-card-default">
+                          <div class="pwc-card-header" style="color: orangered;">
+                          <h2 class="pwc-card-title" style="color: #666; font-weight: bold">` +
+                    this.document_clips[doc].clips[clip].clip_name +
+                    `</h2>
+
+
+
+                          </div>
+                          <div class="pwc-card-body">
+                            <div>
+          <pre style="
+    overflow: hidden;
+">
+            <code>
+            ` +
+                    this.document_clips[doc].clips[clip].clip_text.replace(/</g, "&lt;").replace(/>/g, "&gt;") +
+                    `
+
+
+            </code>
+          </pre>
+
+                            </div>
+                            <p>
+                            ` +
+                    this.document_clips[doc].clips[clip].clip_description +
+                    `
+
+                            </p>
+
+
+                          </div>
+
+
+                        </div>
+                      </div>`
+                  )
+                }
+
+
+
+              }
+
+            }
+          }
+          documentHTML.write(`</div></section>` + footer.toString());
+          documentHTML.end()
+          console.log("Written!" + __dirname);
+          const pagePath = path.join('file://', __dirname, '/documentations/' + this.activedocname + '.html')
+          shell.openExternal(pagePath)
+
+        },
+        addNewDoc: function () {
+
+
+          var newid = this.documents.length + 1;
+
+          this.documents.push({
+            "documentation_id": newid,
+            "name": this.query,
+            "author": "Michael N. N.",
+            "dateCreated": "Wed Aug 30 16:38:10 EAT 2017",
+            "Short_desc": "New Documentatoin",
+            "imageUrl": "pic.png"
+          })
+          console.log(newid + "Yupo doc clip");
+          this.document_clips.push({
+            "documentation_id": newid,
+            "name": this.query,
+            "clips": [{
+              "clip_id": 1,
+              "clip_name": "Introduction/description",
+              "clip_tag": "Bootstrap download lk",
+              "clip_text": "link to documentation: http://michaelngugin.github.io/.",
+              "clip_description": "Add a description Here!",
+              "clip_Slide": 1,
+              "is_text": true,
+              "is_primary": true,
+              "clip_time": "Now",
+              "clip_date": Date()
+            }]
+
+          })
+          this.query = ''
+        },
+        DeleteClip: function () {
+          for (var doc in this.document_clips) {
+            if (this.document_clips[doc].documentation_id === this.activedockey) {
+              //    var nextId = app.document_clips[doc].clips.length + 1
+              //  var text = clipboard.readText('selection')
+              var found = false
+
+              for (var clip in this.document_clips[doc].clips) {
+
+                if (this.document_clips[doc].clips[clip].clip_id == this.activeClip.clip_id) {
+                  console.log("Here I am Mike: " + clip);
+                  //  delete this.document_clips[doc].clips[clip]
+                  this.document_clips[doc].clips.splice(clip, 1)
+                  //this.contentdataSeen = true
+                  this.showClipsToggle()
+                  let myNotification = new Notification('Deleted', {
+                    body: 'Deleted ' + this.document_clips[doc].clips[clip].clip_name
+                  })
+
+                  myNotification.onclick = () => {
+                    console.log('Oh Man')
+                  }
+                  found = true
+                }
+
+
+              }
+
+              if (!found) {
+                console.log("Nada Nada! Something Went Wrong!!");
+
+
+              }
+            }
+          }
+          console.log("Deleted :: " + this.activeClip.clip_name);
+
+        },
+        UpdateClipData: function () {
+          for (var doc in this.document_clips) {
+            if (this.document_clips[doc].documentation_id === this.activedockey) {
+              //    var nextId = app.document_clips[doc].clips.length + 1
+              //  var text = clipboard.readText('selection')
+              var found = false
+
+              for (var clip in this.document_clips[doc].clips) {
+
+                if (this.document_clips[doc].clips[clip].clip_id == this.activeClip.clip_id) {
+                  console.log("Here I am Mike: " + clip);
+                  if (this.activedockey == this.selectVal) {
+                    console.log("Yada Yada::: Same Document Key!!!!");
+                    this.document_clips[doc].clips[clip].clip_description = this.activeClip.clip_name
+                    this.document_clips[doc].clips[clip].clip_description = $('.richText-editor').html()
+                    //  delete this.document_clips[doc].clips[clip]
+                    console.log($('.richText-editor').html())
+                    this.activeClip.clip_description = this.document_clips[doc].clips[clip].clip_description
+                    //  this.document_clips[doc].clips.splice(clip,1)
+                    found = true
+                  } else {
+                    var tempclip = this.activeClip
+
+                    for (var dc in this.document_clips) {
+                      if (this.document_clips[dc].documentation_id == this.selectVal) {
+                        console.log("Found Document :: " + this.selectVal);
+                        var nextId = app.document_clips[dc].clips.length + 1
+                        tempclip.clip_id = nextId
+                        this.document_clips[dc].clips.push(tempclip)
+
+
+                      }
+                      // console.log(this.document_clips);
+                    }
+                    this.DeleteClip()
+                    console.log("Nada Nada ::: Not in the same doc Pal!");
+                  }
+                }
+              }
+              if (!found) {
+                console.log("Yada Yada! Something Went Wrong!!");
+              }
+              this.showClipsToggle()
+              UIkit.modal("#modal-sections").hide();
+            }
+          }
+          console.log("Updated :: " + this.activeClip.clip_name);
+        },
+        refresh: function (v) {
+          this.NativeClips.splice(v, 1)
+          console.log("Spliced")
+        },
+        updateContent: function (value) {
+          this.clipdata = value.clip_text
+          this.clipsSeen = false
+          this.contentdataSeen = true
+          this.shownImage = value.is_text
+          this.clipName = value.clip_name
+          this.myText = value.clip_description
+          this.activeClip = value
+          $('.richText-editor').html(value.clip_description)
+          console.log("Yada yada :::::");
+        },
+        takeScreen: function () {
+          console.log("Yada yada Please");
+          takeScreenshot()
+        },
+        refreshClips: function (value) {
+
+          console.log("Yada Yada " + value.removed)
+          var found = false
+          this.activedockey = value.key
+          this.activedocname = value.name
+          this.selectVal = value.key
+
+          console.log(this.activedockey + "YYYYYYYY ::: YYYYYYY" + this.activedocname);
+
+          for (var doc in this.document_clips) {
+            if (this.document_clips[doc].documentation_id === value.key) {
+              //console.log(this.NativeClips)
+              this.NativeClips = this.document_clips[doc].clips
+              //  console.log(this.NativeClips)
+              found = true
+            } else {
+              //this.NativeClips = [{"clip_name": "No clips in the Documentation Yet"}]
+            }
+            if (!found) this.NativeClips = [{
+              "clip_name": "No clips in the Documentation Yet"
+            }]
+            // console.log("Nada Nada")
+            this.clipsSeen = true
+            this.contentdataSeen = false
+            this.helperVisible = true
+
+          }
+        },
+        'incrementTotal': function (value) {
+          this.documents.filter(post => {
+            return post.name.toLowerCase().includes(this.query.toLowerCase())
+          })
+          var append = true
+
+          for (var doc in this.activedocs) {
+            if (this.activedocs[doc].name === value.name) {
+              //console.log("Yada Yada")
+              append = false
+            }
+          }
+          if (append) this.activedocs.push(value)
+        },
+        filterDocuments: _.debounce(
+          function (str) {
+            this.answer = "Thinking Silently... "
+          }, 500
+        )
+      }
+    }).$mount('#app')
+   
+    // Now the app has started!
+  </script>
+  <script src="scripts/index.js"></script>
+
+</body>
+
+</html>

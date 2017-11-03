@@ -109,7 +109,7 @@ clipboardWatcher({
               "is_text": false,
               "is_primary": true,
               "clip_time": "Now",
-              "clip_date": "Mon Mar 27 09:29:21 EAT 2017"
+              "clip_date": Date()
             })
           }
 
@@ -160,7 +160,7 @@ clipboardWatcher({
                 "clip_Slide": 1,
                 "is_text": false,
                 "clip_time": "Now",
-                "clip_date": "Mon Mar 27 09:29:21 EAT 2017"
+                "clip_date": Date()
               })
             }
 
@@ -203,7 +203,7 @@ clipboardWatcher({
               "is_text": true,
               "is_primary": true,
               "clip_time": "Now",
-              "clip_date": "Mon Mar 27 09:29:21 EAT 2017"
+              "clip_date": Date()
             })
           }
 
